@@ -1,3 +1,4 @@
+LABEL org.opencontainers.image.source https://github.com/jmcarbo/redirecthttps
 FROM golang:1.15 as golang
 COPY . /redirecthttps
 RUN cd /redirecthttps && go build -o redirecthttps .
